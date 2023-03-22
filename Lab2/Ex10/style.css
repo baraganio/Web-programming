@@ -1,0 +1,25 @@
+.top-gradient{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: -webkit-linear-gradient(top, red, transparent);
+}
+
+.midle{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.line{
+    height: 2px;
+    background-color: black;
+}
+
+.bottom-gradient{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    height: 50%;
+    background-image: -webkit-linear-gradient(top, transparent, blue);
+}
