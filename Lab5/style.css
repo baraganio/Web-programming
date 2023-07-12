@@ -1,0 +1,21 @@
+ul{
+  position: absolute;
+  left: -200px;
+  top: 200;
+}
+
+li {
+  position: absolute;
+  list-style: none;
+}
+
+img{
+  width: 200px;
+  height: 150px;
+}
+
+#toShow{
+  margin-top: 400px;
+  margin-left: 500px;
+  width: 30%;
+}
