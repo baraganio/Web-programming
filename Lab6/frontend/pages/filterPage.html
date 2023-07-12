@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../styles/filterPage.css">
+        <script src="../scripts/filterPage.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <ul id="nav-bar">
+                <li>
+                    <button id="home-page" type="button">Home</button>
+                </li>
+                <li>
+                    <button id="db-insert" type="button">Insert Log</button>
+                </li>
+                <li>
+                    <button id="db-filter" type="button">Filter Logs</button>
+                </li>
+                <li>
+                    <button id="db-delete" type="button">Delete Log</button>
+                </li>
+            </ul>
+        
+            <h1 class="title">Filtered Logs</h1><hr>
+            <label for="log-type">Type:</label><br>
+            <label for="debug-r"> Debug:</label>
+            <input type="radio" id="debug-r" name="type" value="debug">
+            <label for="warning-r"> Warning:</label>
+            <input type="radio" id="warning-r" name="type" value="warning">
+            <label for="notice-r">Notice:</label>
+            <input type="radio" id="notice-r" name="type" value="notice">
+            <label for="error-r">Error:</label>
+            <input type="radio" id="error-r" name="type" value="error">
+            <label for="critical-r">Critical:</label>
+            <input type="radio" id="critical-r" name="type" value="critical">
+            <hr>
+            <label for="log-type">Severity:</label><br>
+            <label for="low-r"> Low:</label>
+            <input type="radio" id="low-r" name="severity" value="low">
+            <label for="medium-r"> Medium:</label>
+            <input type="radio" id="medium-r" name="severity" value="medium">
+            <label for="high-r"> High:</label>
+            <input type="radio" id="high-r" name="severity" value="high">
+            <hr>
+            <label for="only-user"> My Logs:</label>
+            <input type="checkbox" id="only-user" name="owner" value="all">
+            <hr>
+            <button type="button" id="filter-logs-btn">Filter Logs</button>
+            <hr>
+
+            <div id="main-logs-div">
+                <table id="logs-table">
+                    <tr>
+                        <th>Log ID</th>
+                        <th>Log Username</th>
+                        <th>Log Date</th>
+                        <th>Log Type</th>
+                        <th>Log Severity</th>
+                        <th>Log Message</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </table>
+                <div id="buttons-logs-div">
+                    <button id="prev-logs-btn" type="button">Previous Page</button>
+                    <button id="next-logs-btn" type="button">Next Page</button>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>
