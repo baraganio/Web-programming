@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Geonological tree</title>
+
+        <script src="../scripts/homePage.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Geonological Tree Application</h1><hr>
+
+            <label for="userNameToAdd"> User's Name:</label>
+            <input type="text" id="userNameToAdd" name = "userNameToAdd"><br>
+
+            <label for="userFatherToAdd"> User's father name:</label>
+            <input type="text" id="userFatherToAdd" name = "userFatherToAdd"><br>
+
+            <label for="userMotherToAdd"> User's mother name:</label>
+            <input type="text" id="userMotherToAdd" name = "userMotherToAdd"><br>
+
+            <button id="insertFamilyRelation" type="button">Insert new family relation</button>
+
+            <hr>
+
+            <button id="displaySiblings" type="button">Display Siblings</button>
+            <div id="siblings"></div>
+
+            <hr>
+            <button id="displayFatherLine" type="button">Display father line</button>
+            <div id="fatherline"></div>
+
+            <hr>
+            
+            <button id="displayMotherLine" type="button">Display mother line</button>
+            <div id="motherline"></div>
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>
