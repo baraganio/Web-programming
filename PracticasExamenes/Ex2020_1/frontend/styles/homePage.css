@@ -1,0 +1,25 @@
+
+
+#articles-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#articles-table th, #articles-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#articles-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+    
+#articles-table td {
+      background-color: #ffffff;
+}
+

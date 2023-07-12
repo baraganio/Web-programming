@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Home Page</title>
+
+        <script src="../scripts/homePage.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Journals</h1><hr>
+
+            <label for="fatherName"> Father Name:</label>
+            <input type="text" id="fatherName" name = "fatherName">
+            <button id="insertFatherName" type="button">Insert father</button><br>
+
+            <label for="motherName"> Mother Name:</label>
+            <input type="text" id="motherName" name = "motherName">
+            <button id="insertMotherName" type="button">Insert mother</button><br>
+
+            <hr>
+
+            <button id="fatherDescendingLine" type="button">Search father descending line</button><br>
+            <div id="fatherLine">   </div>
+
+            <button id="motherDescendingLine" type="button">Search mother descending line</button><br>
+            <div id="motherLine">   </div>
+            
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>

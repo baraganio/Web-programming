@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Home Page</title>
+
+        <link rel="stylesheet" href="../styles/homePage.css">
+        <script src="../scripts/homePage.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Journals</h1><hr>
+
+            <label for="journal-name"> Journal Name:</label>
+            <input type="text" id="journal-name" name = "journalName"><br>
+            <button id="search-journal-name" type="button">Search</button><br>
+            <button id="insert-article" type="button">Insert new Article</button>
+
+            <div id="main-articles-div">
+                <table id="articles-table">
+                    <tr>
+                        <th>Article ID</th>
+                        <th>Author Username</th>
+                        <th>Journal ID</th>
+                        <th>Summary</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </table>
+                <!--<div id="buttons-logs-div">
+                    <button id="prev-logs-btn" type="button">Previous Page</button>
+                    <button id="next-logs-btn" type="button">Next Page</button>
+                </div>-->
+            </div>
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Home Page</title>
+        <script src="../scripts/homePage.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Projects</h1><hr>
+
+            <button id="loadAllProjects" type="button">Load all projects</button>
+
+            <div id="main-articles-div">
+                <table id="projectsTable">
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Project Manager ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Members</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </table>
+            </div>
+
+            
+            
+            <button id="loadProjectsMemberOf" type="button">Load the projects I am member</button>
+
+            <div id="projectsMemberOf">
+
+            </div>
+
+            <label for="developerName"> Developer name:</label>
+            <input type="text" id="developerName" name = "developerName"><br>
+            <label for="projectsToBeAdded"> Projects to add the developer:</label>
+            <input type="text" id="projectsToBeAdded" name = "projectsToBeAdded"><br>
+            <button id="addProjectsToDeveloper" type="button">Add developer to the projects</button><br>
+
+            <label for="devSkill"> Skills to have:</label>
+            <input type="text" id="devSkill" name = "devSkill"><br>
+            <button id="loadSkilledDevs" type="button">Load skilled devs</button><br>
+
+            <div id="skilledDev">
+
+            </div>
+            
+
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>

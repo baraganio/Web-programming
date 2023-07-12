@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Home Page</title>
+
+        <script src="../scripts/index.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Journals</h1><hr>
+
+            <label for="documentName"> Document name:</label>
+            <input type="text" id="documentName" name = "documentName"><br>
+
+            <label for="keyword1"> Keyword 1:</label>
+            <input type="text" id="keyword1" name = "keyword1"><br>
+
+            <label for="keyword2"> Keyword 2:</label>
+            <input type="text" id="keyword2" name = "keyword2"><br>
+
+            <label for="keyword3"> Keyword 3:</label>
+            <input type="text" id="keyword3" name = "keyword3"><br>
+
+            <label for="keyword4"> Keyword 4:</label>
+            <input type="text" id="keyword4" name = "keyword4"><br>
+
+            <label for="keyword5"> Keyword 5:</label>
+            <input type="text" id="keyword5" name = "keyword5"><br>
+
+            <button id="updateKeyWords" type="button">Update keywords</button>
+
+            <hr>
+
+            <button id="diplayWebsites" type="button">Display websites</button>
+            <div>
+                <table id="websitesTable"> 
+                    <tr>
+                        <th>Website ID</th>
+                        <th>Website URL</th>
+                        <th>Website documents</th>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+            
+            <label for="keysToMatch"> Keys to match:</label>
+            <input type="text" id="keysToMatch" name = "keysToMatch"><br>
+            <button id="searchKeysToMatch" type="button">Search</button>
+            <div id="docMatchesDiv"></div>
+
+
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>

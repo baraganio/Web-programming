@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title that will be visible on the tab name -->
+        <title>Home Page</title>
+
+        <!--<link rel="stylesheet" href="../styles/homePage.css">-->
+        <script src="../scripts/homePage.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Journals</h1><hr>
+            <button id="search-own-subscriptions" type="button">Search my subscriptions</button><hr>
+
+            <label for="channel-name"> Name of channel:</label>
+            <input type="text" id="channel-name" name = "channelName"><br>
+            <button id="subscribe" type="button">Subscribe</button><hr>
+
+
+            <label for="owner-name"> Name of the owner:</label>
+            <input type="text" id="owner-name" name = "ownerName"><br>
+            <button id="search-owner-name" type="button">Search</button><br>
+
+            <div id="main-articles-div">
+                <table id="channels-table">
+                    <tr>
+                        <th>Id</th>
+                        <th>OwnerId</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Subscribers</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </table>
+                <!--<div id="buttons-logs-div">
+                    <button id="prev-logs-btn" type="button">Previous Page</button>
+                    <button id="next-logs-btn" type="button">Next Page</button>
+                </div>-->
+            </div>
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>

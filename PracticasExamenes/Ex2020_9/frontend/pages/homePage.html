@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert Page</title>
+        <!--<link rel="stylesheet" href="../styles/homePage.css">-->
+        <script src="../scripts/homePage.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <h1 class="title">Insert new Product</h1><hr>
+            <form action="../../server/insert.php" method = "POST">
+                
+                <label for="productName">Product name:</label>
+                <input type="text" id="productName" name="productName"><br>
+
+                <label for="productDescription">Product description:</label>
+                <input type="text" id="productDescription" name="productDescription"><br>
+
+
+                <input type="submit" name="submit" value="Insert">
+            </form>
+
+            <button id="allProductPageBtn" type="button">See al products</button>
+
+            <button id="submitPro" type="button">Submit products</button>
+
+            <form action="../../server/uploadToDb.php" method = "POST">
+                <input type="submit" name="submit" value="Upload order">
+            </form>
+
+            <form action="../../server/cancelUploadtoDb.php" method = "POST">
+                <input type="submit" name="submit" value="Cancel order">
+            </form>
+            
+        </main>
+        <script type="text/javascript">
+            var eventHandle = new EventHandling();
+        </script>
+    </body>
+    
+</html>
